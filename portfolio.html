@@ -1,24 +1,44 @@
 <!DOCTYPE html>
     <html> 
         <head>
+            <!-- Starting of Portfolio page -->
             <title>Portfolio page of my portfolio site</title>
 
             <link href="design.css" rel="stylesheet" type="text/css">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
         <body>
+            <h1 class="right">Welcome</h1>
+            <h1 class="down">Hello! There.</h1>
             <div class="main">
                 <nav>
-                    <b class="logo">Rovika</b>
-                    <!-- <img src="logo.png"/> -->
-                    <ul class="navigation">
-                        <li><a href="index.html"> Home </a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="workexperience.html">Work Experience</a></li>
-                        <li><a href="sitereport.html">Site report</a></li>
-                    </ul>
-                </nav>
+					<!-- list of pages inside navigation bar -->
+					<div id="bar">
+						<!-- hamburger icon -->
+						<input type="checkbox" id="check">
+						<label for="check" class="ham">&#9776;</label>
+
+                        <!-- Tabs -->
+                        <ul class="navigation">
+                             <li><a href="index.html"> Home </a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="workexperience.html">Work Experience</a></li>
+                            <li><a href="sitereport.html">Site report</a></li>
+                        </ul>
+					</div>
+				</nav>
+                <!-- Created line -->
+                <div class="line"></div>
+                <section class="column">
+                    <!-- Grid to add projects done by me -->
+                    <div class="row"> Work 1 </div>
+                    <div class="row"> Work 2 </div>
+                    <div class="row"> Work 3 </div>
+                    <div class="row"> Work 4 </div>
+                    <div class="row"> Work 5 </div>
+                    <div class="row"> Work 6 </div>
+                </section>
             </div>
         </body>
     </html>

@@ -9,42 +9,91 @@
 body{
     width: 100%;
     height: 100vh;
-    background-color: rgb(237, 116, 47);
+    background-color: rgb(238, 153, 69);
     display: flex;
     justify-content: center;
+}
+
+.right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    color: rgb(206, 204, 204);
+    opacity: 0.2;
+}
+
+.down{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    color: rgb(206, 204, 204);
+    opacity: 0.2;
 }
 
 .main{
     width: 75%;
     height: 80vh;
     margin: auto;
-    background-color: white;
+    background-color: rgb(248, 210, 171);
+    box-shadow: -1px 4px 20px 0px rgb(147, 56, 4);
+    z-index: 1;
 }
 
+/* Navigation bar */
 nav{
-    display:flex;
+	justify-content: space-between;
+	padding: 2rem 1rem;
+	display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem 1rem;
-}
-
-.logo{
-    width: 40%;
 }
 
 .navigation{
-    width: 60%;
     display: flex;
+    margin-left: 20px;
     justify-content: space-around;
     text-decoration: none;
     list-style: none;
+    column-gap: 20px;
 }
 
 li a{
-    color: black;
+    color: rgb(6, 52, 162);
+    font-family: didot, sans-serif;
     font-size: medium;
-    font-weight: 500;
+    font-weight: bold;
 }
+
+li a:hover{
+	color: #ffffff;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+#check{
+	display: none;
+}
+
+.ham{
+	display: none;
+	user-select: none;
+	font-size: 25px;
+}
+
+/* create horizontal line */
+
+.line{
+    background-image: linear-gradient(to right, rgb(238, 153, 69),rgb(65, 96, 198));
+    height: 2px;
+    width: 95%;
+    margin: auto;
+    opacity: 0.5;
+}
+
+/* Home page */
 
 img{
     width: 80%;
@@ -52,4 +101,655 @@ img{
     display: flex;
     margin: auto;
     opacity: 0.8;
+}
+
+.side{
+    width: 50%;
+}
+
+.side img{
+    width: 80%;
+    padding: 10% 0;
+}
+
+.profile{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.introduction{
+    width: 50%;
+    padding: 6%;
+}
+
+.intro h2{
+    color: rgb(4, 40, 125);
+    font-size: 100px;
+    font-family: didot, sans-serif;
+}
+    
+.more p{
+    font-family: baskerville, serif;
+    line-height: 22px;
+    font-weight: 500;
+    color: rgb(35, 72, 194);
+}
+    
+.select_btn{
+    color: rgb(4, 40, 125);
+    font-family: optima,sans-serif;
+    font-weight: 500;
+}
+    
+.select_btn:hover{
+    font-weight: 400;
+    text-decoration: underline;
+}
+    
+/* Portfolio page */
+    
+.column{
+    width: 90%;
+    padding-top: 50px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-content: space-around;
+    row-gap: 50px;
+}
+
+.row{
+    width: 200px;
+    height:200px;
+    padding-top: 80px;
+    border: none;
+    box-shadow: 0px 3px 6px 0px;
+    border: 1px solid;
+    color: rgb(4, 40, 125);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.row:hover{
+    /* box-shadow: 0px 2px 20px 0px; */
+    font-size:x-large;
+}
+
+/* Contact page */
+
+.contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5% 10%;
+}
+
+.first{
+    width: 50%;
+}
+
+.first h3{
+    color: rgb(4, 40, 125);
+    font-size: 50px;
+    font-family: didot, sans-serif;
+}
+
+.myinfo{
+    padding: 5%;
+}
+
+.contact_info{
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.contact_info h5{
+    color: rgb(4, 40, 125);
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.icon{
+    width: 10%;
+    height: 10%;
+    margin: 0;
+}
+
+.first p{
+    color: rgb(4, 40, 125);
+    font-size: 15px;
+}
+
+.second{
+    width: 50%;
+}
+
+.details{
+	margin: 10px;
+	width: 80%;
+	color: rgb(4, 40, 125);
+	font-size: 30px;
+}
+
+.details h3{
+    color: rgb(4, 40, 125);
+    font-size: 50px;
+    font-family: didot, sans-serif;
+}
+
+input{
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	outline: none;
+	resize: none;
+	transition: all 0.2s;
+	box-sizing: border-box;
+	border: 0;
+	background: none;
+}
+
+input:focus{
+	border-bottom: 1px solid rgb(4, 40, 125);
+}
+
+.myinfo p{
+	margin: 10px;
+}
+
+p:before{
+	display: block;
+	margin: 25px 0;
+	font-size: 15px;
+	color: black;
+}
+
+.submit_btn{
+    width: inherit;
+    padding: 5px;
+    margin: 0 10%;
+    font-size: 20px;
+    border: none;
+    color: rgb(4, 40, 125);
+    border-radius: 10px;
+}
+
+/* Work Experience page */
+
+.holder{
+    width: 100%;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    row-gap: 50px;
+}
+
+.tabs{
+    margin: 0 auto;
+    font-size: x-large;
+}
+
+.feed{
+    height: 450px;
+    display: grid;
+    grid-template-rows: 180px 180px;
+    border-left: 1px solid;
+    padding: 0 5%;
+    line-height: 22px;
+    word-spacing: 2px;
+    overflow: scroll;
+}
+
+.feed h2{
+    color: rgb(4, 40, 125);
+    margin-bottom: 10px;
+}
+
+.feed p{
+    color: rgb(3, 28, 86);
+}
+
+.data{
+    color: rgb(3, 28, 86);
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.year{
+    text-decoration: underline;
+}
+
+.course, .academy_name{
+    font-weight: 600;
+}
+
+/* Sirereport page */
+
+.report{
+    width: 90%;
+    height: 480px;
+    overflow: scroll;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.title{
+    color: rgb(4, 40, 125);
+}
+
+.description{
+    margin-top: 30px;
+    color: rgb(3, 28, 86);
+    line-height: 22px;
+    word-spacing: 2px;
+}
+
+.website{
+    margin-top: 80px;
+}
+
+.website h3{
+    color: rgb(4, 40, 125);
+}
+
+.website p{
+    color: rgb(3, 28, 86);
+    line-height: 22px;
+    word-spacing: 2px;
+}
+
+.images{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.images .mobile{
+    width: 30%;
+}
+
+.images .tablet{
+    width: 65%;
+}
+
+.link h4{
+    color: rgb(4, 40, 125);
+    text-decoration: none;
+}
+
+@media (max-width: 1600px) {
+    
+    /* Work Experience page */
+    .feed{
+        height: 400px;
+    }
+
+    /* Site report page */
+    .report{
+        height: 430px;
+    }
+    
+}
+
+@media (max-width: 1500px) {
+    
+    /* Portfolio page */
+    .row{
+        width: 180px;
+        height:180px;
+    }
+
+}
+
+@media (max-width: 1250px){
+
+    /* Home page */
+    .intro h2{
+        font-size: 80px;
+    }
+
+    /* Site report page */
+    .report{
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    
+    /* Contact page */
+    .first h3{
+        font-size: 40px;
+    }
+
+    .details{
+        margin: 0 10px;
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .details h3{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    /* Words behind main page */
+    .right{
+        font-size: 80px;
+    }
+    
+    .down{
+        font-size: 80px;
+    }
+
+    /* Navigation bar */
+    .navigation{
+        width: 80%;
+    }
+
+    /* Home page */
+    .intro h2{
+        font-size: 70px;
+    }
+    
+    .side img{
+        width: 70%;
+        height: 90%;
+    }
+
+    .images{
+        width: 90%;
+    }
+
+    /* Work Experience page */
+    .holder{
+        row-gap: 100px;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    /* Navigation bar */
+    .navigation{
+        width: 100%;
+    }
+
+    /* Home page */
+    .main{
+        width: 85%;
+    }
+
+    /* Contact page */
+    .first h3{
+        font-size: 35px;
+    }
+
+    .myinfo{
+        padding: 10% 5%;
+    }
+
+    .details h3{
+        font-size: 35px;
+    }
+
+    .submit_btn{
+        margin: 0 5%;
+        font-size: 16px;
+    }
+   
+}
+
+@media (max-width: 768px) {
+
+    /* Navigation bar */
+    nav{
+        padding: 1rem;
+    }
+
+    .navigation{
+        width: 85%;
+        margin: 15px auto;
+		display: none;
+		position: fixed;
+		background-color: rgb(248, 210, 171);
+        border-top: 2px solid rgb(238, 153, 69);
+        border-bottom: 2px solid rgb(238, 153, 69);
+		right: 0;
+		left: 0;
+		text-align: center;
+		align-content: center;
+        z-index: 5;
+	}
+
+	.navigation li+li{
+		margin-top: 15px;
+	}
+
+	.navigation li a:hover{
+		display: inline-block;
+		transition: 0.3s;
+		cursor: pointer;
+	}
+
+	#check:checked ~ ul{
+		display: block;
+	}
+
+	.ham{
+		display: block;
+		font-size: 40px;
+		color: rgb(4, 40, 125);	
+	}
+
+    /* Home page */
+    .introduction{
+        padding: 10% 0 5% 5%;
+    }
+
+    .intro h2{
+        font-size: 60px;
+    }
+
+    .more p{
+        margin: 10px 0 0 10px;
+    }
+
+    .side img{
+        height: 100%;
+    }
+
+    /* Portfolio page */
+    .row{
+        width: 160px;
+        height: 160px;
+        padding-top: 70px;
+    }
+
+    /* Work Experience page */
+    .feed{
+        grid-template-rows: 220px 220px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    /* Words behind main page */
+    .right{
+        font-size: 70px;
+    }
+    
+    .down{
+        font-size: 70px;
+    }
+
+    /* Navigation bar */
+    .navigation{
+        width: 95%;
+	}
+    
+    /* Home page */
+    .main{
+        width: 95%;
+        height: 82vh;
+    }
+    
+    .introduction{
+        width: 100%;
+        padding: 6%;
+    }
+
+    .side{
+        display: none;
+    }
+
+    .images{
+        width: 100%;
+    }
+
+    /* Portfolio page */
+    .column{
+        height: 450px;
+        padding-top: 250px;
+        grid-template-columns: auto auto;
+        overflow: scroll;
+    }
+    
+    .row{
+        width: 180px;
+        height:180px;
+    }
+
+    /* Contact page */
+    .first h3{
+        font-size: 30px;
+    }
+    
+    .details h3{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 530px) {
+    
+    /* Woek Experience page */
+    .holder{
+        padding: 5% 2%;
+        grid-template-columns: 2fr 5fr;
+    }
+    
+    .feed{
+        grid-template-rows: 280px 280px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    /* Words behind main page */
+    .down{
+        font-size: 60px;
+    }
+
+    /* Contact page */
+    .contact{
+        height: 450px;
+        flex-direction: column;
+        row-gap: 40px;
+        overflow: scroll;
+    }
+
+    .first{
+        width: 100%;
+    }
+
+    .first h3{
+        font-size: 40px;
+    }
+
+    .second{
+        width: 100%;
+    }
+
+    .details h3{
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    /* Portfolio page */
+    .column{
+        padding-top: 200px;
+    }
+    
+    .row{
+        width: 150px;
+        height: 150px;
+        padding-top: 60px;
+    }
+
+    /* Work Experience page */
+    .holder{
+        grid-template-columns: 1fr;
+    }
+
+    .tabs{
+        display: none;
+    }
+
+    .feed{
+        border: none;
+    }
+}
+
+@media (max-width: 375px) {
+
+    /* Words behind main page */
+    .right{
+        font-size: 60px;
+    }
+
+    .down{
+        font-size: 45px;
+    }
+
+    /* Portfolio page */
+    .column{
+        padding-top: 140px;
+    }
+    
+    .row{
+        width: 130px;
+        height: 130px;
+        padding-top: 50px;
+    }
+
+    /* Contact page */
+    .first h3{
+        font-size: 35px;
+    }
+
+    .details h3{
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    /* Portfolio page */
+    .column{
+        padding-top: 100px;
+    }
 }

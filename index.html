@@ -1,25 +1,56 @@
 <!DOCTYPE html>
     <html> 
+        <!-- Starting of contact page -->
         <head>
             <title>Homepage of my portfolio site</title>
 
             <link href="design.css" rel="stylesheet" type="text/css">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         </head>
         <body>
+            <h1 class="right">Welcome</h1>
+            <h1 class="down">Hello! There.</h1>
             <div class="main">
                 <nav>
-                    <b class="logo">Rovika</b>
-                    <!-- <img src="logo.png"/> -->
-                    <ul class="navigation">
-                        <li><a href="index.html"> Home </a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="workexperience.html">Work Experience</a></li>
-                        <li><a href="sitereport.html">Site report</a></li>
-                    </ul>
-                </nav>
-                <img src="girl.jpeg" class="home_img" alt="Home img"/>
+					<!-- list of pages inside navigation bar -->
+					<div id="bar">
+						<!-- hamburger icon -->
+						<input type="checkbox" id="check">
+						<label for="check" class="ham">&#9776;</label>
+
+                        <!-- Tabs -->
+                        <ul class="navigation">
+                             <li><a href="index.html"> Home </a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="workexperience.html">Work Experience</a></li>
+                            <li><a href="sitereport.html">Site report</a></li>
+                        </ul>
+					</div>
+				</nav>
+                <!-- Created line  -->
+                <div class="line"></div>
+                <section class="profile">
+                    <div class="introduction">
+                        <div class="intro">
+                            <h2>Welcome.</h2>
+                        </div>
+                        <!-- Introduction to the page -->
+                        <div class="more">
+                            <p>My name is Rovika Gurung.
+                                I'm a front-end developer and student of BSc Computing in NAMI and I’m excited to be able to share my work with you here.
+                                If you have any questions, feel free to reach out to me at <a class="select_btn" href="contact.html">>></a>.<br>
+                                <!-- Onclick can direct it to another page -->
+                                This website consist of 5 pages that are: <a class="select_btn" href="index.html">Home</a>,  <a class="select_btn" href="portfolio.html">Portfolio</a>,  <a class="select_btn" href="workexperience.html">Work Experience</a>,  <a class="select_btn" href="contact.html">Contact</a> and  <a class="select_btn" href="sitereport.html">Sitereport</a> page.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="side">
+                        <!-- Image to make it more user friendly -->
+                        <img src="images/light.jpg" alt="Lamp image"/>
+                    </div>
+                </section>
             </div>
         </body>
     </html>

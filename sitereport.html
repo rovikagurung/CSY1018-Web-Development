@@ -1,6 +1,7 @@
 <!DOCTYPE html>
     <html> 
         <head>
+            <!-- Starting of Site report page -->
             <title>Site report page of my portfolio site</title>
 
             <link href="design.css" rel="stylesheet" type="text/css">
@@ -8,17 +9,110 @@
         </head>
         <body>
             <div class="main">
+                <h1 class="right">Welcome</h1>
+                <h1 class="down">Hello! There.</h1>    
                 <nav>
-                    <b class="logo">Rovika</b>
-                    <!-- <img src="logo.png"/> -->
-                    <ul class="navigation">
-                        <li><a href="index.html"> Home </a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="workexperience.html">Work Experience</a></li>
-                        <li><a href="sitereport.html">Site report</a></li>
-                    </ul>
-                </nav>
+					<!-- list of pages inside navigation bar -->
+					<div id="bar">
+						<!-- hamburger icon -->
+						<input type="checkbox" id="check">
+						<label for="check" class="ham">&#9776;</label>
+
+                        <!-- Tabs -->
+                        <ul class="navigation">
+                             <li><a href="index.html"> Home </a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="workexperience.html">Work Experience</a></li>
+                            <li><a href="sitereport.html">Site report</a></li>
+                        </ul>
+					</div>
+				</nav>
+                <div class="line"></div>
+                <section class="report">
+                    <!-- Starting of report -->
+                    <div class="title">
+                        <h2> CSY1018 (Web Development) </h2>
+                        <h3>Assignment-1</h3>
+                    </div>
+                    <div class="description">
+                        <p class="html">
+                            <!-- Basic introductionn to HTML -->
+                            The HyperText Markup Language(HTML), is a standard markup language for texts that are designed to be viewed in a web browser. 
+                            It is assisted by Cascading Style Sheets (CSS) and programming languages like JavaScript. HTML describes the structure of a Web page. 
+                            HTML elments are known as the building blocks of HTML page and are delineaded by tags. Tags are of two type: paired and unpaired tags. 
+                            Paired tags have both opening and closing tags, such as h1 tag, whereas, Unpaired tag only have one tag such as img tag and is known as 
+                            empty elements. HTML tags are not shown by browers, but they are used to comprehend the page content.
+                        </p>
+                        <br/>
+                        <p class="css">
+                            <!-- Basic introduction to CSS -->
+                            CSS(Cascading Style Sheet) is a style sheet language for specifying the appearance of a document written in a markup language like HTML. 
+                            CSS is a key component of the World Wide Web, along with HTML and JavaScripy. A declaration block and one or more selectors make up 
+                            each rule. It specifies how HTML components should appear on a screen and saves a lot of work. It has the ability to control the layout 
+                            of several web pages all at once. CSS supports markup languages like HTML, XHTML, plain XML, SVG and XUL.
+                        </p>
+                    </div>
+                    <div class="website">
+                        <!-- Introduction to my website -->
+                        <h3>Introduction to my website</h3>
+                        <p> 
+                            This website consist of 5 pages: Home, Portfolio, Contact, Work experience and Sitereport pages. For this website, 
+                            I got the material from dribble, pintrest and other web platforms. I have used two colors in different shades for this website that are blue and yellow.
+                            As using few colors make user friendly and more appropriate to use. I have added hamburger icon to make it more user friendly.
+                        </p>
+                        <br/><br/>
+                        <div class="images">
+                            <!-- Images of Mobile an Desktop view -->
+                            <img src="images/home.png" class="mobile" alt="Home page mobile view"/>
+                            <img src="images/homeview.png" class="tablet" alt="Home page Desktop view"/>
+                        </div>
+                        <p> In home page page, it consists of brief introduction of myself and the website. In it i've added image which match with the color of the website. </p>
+                        <br/><br/>
+                        <div class="images">
+                            <!-- Images of Mobile an Desktop view -->
+                            <img src="images/portfolio.png" class="mobile" alt="Portfolio page mobile view"/>
+                            <img src="images/portfolioview.png" class="tablet"  alt="Portfolio page Desktop view"/>
+                        </div>
+                        <p> 
+                            In Portfolio page i have included 6 boxes, where all the future assignment works will be shown. In this page i have used grid to make it more user 
+                            friendly and box will not overlap with eachother.
+                        </p>
+                        <br/><br/>
+                        <div class="images">
+                            <!-- Images of Mobile an Desktop view -->
+                            <img src="images/contact.png" class="moblie" alt="Contact page mobile view"/>
+                            <img src="images/contactview.png" class="tablet"  alt="Contact page Desktop view"/>
+                        </div>
+                        <p>
+                            Contact page is the page where users can write what they thought about the page and contact information of myself. For it the user has to enter his/her name and email. 
+                            After including all the information the user has to click on submit button.
+                        </p>
+                        <br/><br/>
+                        <div class="images">
+                            <!-- Images of Mobile an Desktop view -->
+                            <img src="images/work.png" class="mobile" alt="Work Experience page mobile view"/>
+                            <img src="images/workview.png" class="tablet"  alt="Work Experience page Desktop view"/>
+                        </div>
+                        <p>
+                            In Work Experience page, i have written brief introduction on myself and the work experience i have gained. I have added vertical navigation in this page.
+                        </p>
+                        <br/><br/>
+                        <div class="images">
+                            <!-- Images of Mobile an Desktop view -->
+                            <img src="images/site.png" class="mobile" alt="Site report page mobile view"/>
+                            <img src="images/siteview.png" class="tablet"  alt="Site report page Desktop view"/>
+                        </div>
+                        <p>
+                            In Site report page it includes the report of this website. I have included introduction about the html and css. This page has the description about the page 
+                            and has the screenshot and source code of each pages. 
+                        </p>
+                        <br/><br/>
+                        <div class="link">
+                            <h4>Github link: <a href="https://github.com/rovikagurung/CSY1018-Web-Development">https://github.com/rovikagurung/CSY1018-Web-Development</a></h4>
+                        </div>
+                    </div>
+                </section>
             </div>
         </body>
-    </html>
+    </html> 

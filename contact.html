@@ -1,24 +1,79 @@
 <!DOCTYPE html>
     <html> 
         <head>
+            <!-- Starting of Contact page -->
             <title>Contact page of my portfolio site</title>
 
             <link href="design.css" rel="stylesheet" type="text/css">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
         <body>
+            <h1 class="right">Welcome</h1>
+            <h1 class="down">Hello! There.</h1>
             <div class="main">
                 <nav>
-                    <b class="logo">Rovika</b>
-                    <!-- <img src="logo.png"/> -->
-                    <ul class="navigation">
-                        <li><a href="index.html"> Home </a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="workexperience.html">Work Experience</a></li>
-                        <li><a href="sitereport.html">Site report</a></li>
-                    </ul>
-                </nav>
+					<!-- list of pages inside navigation bar -->
+					<div id="bar">
+						<!-- hamburger icon -->
+						<input type="checkbox" id="check">
+						<label for="check" class="ham">&#9776;</label>
+
+                        <!-- Tabs -->
+                        <ul class="navigation">
+                             <li><a href="index.html"> Home </a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="workexperience.html">Work Experience</a></li>
+                            <li><a href="sitereport.html">Site report</a></li>
+                        </ul>
+					</div>
+				</nav>
+                <!-- Created Line -->
+                <div class="line"></div>
+                <section class="contact">
+                    <div class="first">
+                        <!-- Contact Information -->
+                        <h3>Contact information</h3>
+                        <div class="myinfo">
+                            <span class="contact_info">
+                                <img class="icon" src="images/mail.png"/>
+                                <h5>rovikagurung@gmail.com</h5>
+                            </span>
+                            <span class="contact_info">
+                                <img class="icon" src="images/github.png"/>
+                                <h5>rovikagurung</h5>
+                            </span>
+                            <span class="contact_info">
+                                <img class="icon" src="images/linkedin.png"/>
+                                <h5>Rovika gurung</h5>
+                            </span>
+                        </div>
+                        <p>Thank you for your interest. Please fill out the form and leave a message about my portfolio.</p>
+                    </div>
+                    <div class="second">
+                        <!-- User Contact details -->
+                        <form class="details">
+                            <h3>Get in touch</h3>
+                            <div class="myinfo">
+                                <p type="Name:">
+                                    <input id="name" placeholder="Write your full name." required="required"></input>
+                                </p>
+                                <p type="Email:">
+                                    <input id="email" placeholder="Enter your email address." required="required"></input>
+                                </p>
+                                <p type="Message:">
+                                    <input id="message" placeholder="Type what you want to tell.." required="required"></input>
+                                </p>
+                            </div>
+                            <button class="submit_btn" type="submit">
+                                <!-- Submit button -->
+                                <div class="submit_btn">
+                                    Submit
+                                </div>
+                            </button>
+                        </form>
+                    </div>
+                </section>
             </div>
         </body>
     </html>

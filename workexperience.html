@@ -7,18 +7,78 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
         <body>
+            <h1 class="right">Welcome</h1>
+            <h1 class="down">Hello! There.</h1>
             <div class="main">
                 <nav>
-                    <b class="logo">Rovika</b>
-                    <!-- <img src="logo.png"/> -->
-                    <ul class="navigation">
-                        <li><a href="index.html"> Home </a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="workexperience.html">Work Experience</a></li>
-                        <li><a href="sitereport.html">Site report</a></li>
-                    </ul>
-                </nav>
+					<!-- list of pages inside navigation bar -->
+					<div id="bar">
+						<!-- hamburger icon -->
+						<input type="checkbox" id="check">
+						<label for="check" class="ham">&#9776;</label>
+
+                        <!-- Tabs -->
+                        <ul class="navigation">
+                             <li><a href="index.html"> Home </a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="workexperience.html">Work Experience</a></li>
+                            <li><a href="sitereport.html">Site report</a></li>
+                        </ul>
+					</div>
+				</nav>
+                <!-- Created line -->
+                <div class="line"></div>
+                <section class="holder">
+                    <div class="tabs">
+                        <!-- Side navigation -->
+                        <ul>
+                            <li><a href="#introduction">Introduction</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#education">Education</a></li>
+                        </ul>
+                    </div>
+                    <div class="feed">
+                        <div id="introduction">
+                            <!-- Basic Introduction -->
+                            <h2>Introduction</h2>
+                            <p>I am Rovika Gurung, student of BSc Computing in NAMI college. 
+                            A kind-hearted with a mind full of ingenuity and conception.
+                            I am a coherent and devoted person towards my conservatory and dictate and highly possessed to pursue a career as a front-end developer. 
+                            I believe in creating a stable environment around me by adopting it with a positive mind.</p>
+                        </div>
+                        <div id="experience">
+                            <!-- My Work Experience -->
+                            <h2>Experience</h2>
+                            <p>I have been working as an intern in Ayata Incorporation as a front-end developer from 24th January, 2023. <br/>
+                            Within this months, I've worked on 2 project which has helped me to familiarize with browser testing, debugging and learning about API integration.
+                            During my internship, I've learned about React and about libraries which will help to develop interactive user interface.
+                        </p>
+                        </div>
+                        <br/>
+                        <div id="education">
+                            <!-- My Educationn level -->
+                            <h2>Education</h2>
+                            <div class="edu_info">
+                                <div class="data">
+                                    <div class="year">2021-present</div>
+                                    <div class="course">Bsc Computing</div>
+                                    <div class="academy_name">NAMI(Naya Aayam Multi-disciplinary Institute)</div>
+                                </div>
+                                <div class="data">
+                                    <div class="year">2018-2020</div>
+                                    <div class="course">SLCE</div>
+                                    <div class="academy_name">S.t Mary's Secondary School</div>
+                                </div>
+                                <div class="data">
+                                    <div class="year">2008-2018</div>
+                                    <div class="course">SEE</div>
+                                    <div class="academy_name">S.t Mary's Secondary School</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </body>
     </html>
